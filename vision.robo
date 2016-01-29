@@ -1,9 +1,32 @@
 <head><version>2.79.15</version></head>
+<Timer>
+  <between>FALSE</between>
+  <freq_num>100</freq_num>
+  <once_every>TRUE</once_every>
+</Timer>
+<Axis_Internet_Camera>
+  <auto_back_light>FALSE</auto_back_light>
+  <auto_exposure>FALSE</auto_exposure>
+  <auto_white_balance>FALSE</auto_white_balance>
+  <brightness_value>40</brightness_value>
+  <camera_type>1</camera_type>
+  <color_level_value>60</color_level_value>
+  <compression_index>4</compression_index>
+  <contrast_value>50</contrast_value>
+  <ip_address>10.20.67.11</ip_address>
+  <is_active>TRUE</is_active>
+  <mirrot>FALSE</mirrot>
+  <password>FRC</password>
+  <port>80</port>
+  <resolution>320x240</resolution>
+  <sharpness_value>50</sharpness_value>
+  <username>FRC</username>
+</Axis_Internet_Camera>
 <Color_Threshold>
   <blue_end>255</blue_end>
-  <blue_start>76</blue_start>
+  <blue_start>19</blue_start>
   <green_end>255</green_end>
-  <green_start>32</green_start>
+  <green_start>74</green_start>
   <red_end>179</red_end>
   <red_start>0</red_start>
   <result_type>2</result_type>
@@ -13,7 +36,7 @@
   <filter_size>7</filter_size>
   <max_threshold>255</max_threshold>
   <mean_offset>5</mean_offset>
-  <min_threshold>70</min_threshold>
+  <min_threshold>45</min_threshold>
 </Adaptive_Threshold>
 <Close>
   <close_borders>FALSE</close_borders>
@@ -55,7 +78,7 @@
         <filter_id>42</filter_id>
         <invert_count>0</invert_count>
         <invert_threshold>0</invert_threshold>
-        <weight_threshold>0.70</weight_threshold>
+        <weight_threshold>0.65</weight_threshold>
       </filter:2>
       <filter:3>
         <count_threshold>1</count_threshold>
