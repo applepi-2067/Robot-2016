@@ -137,7 +137,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Team Code" Type="Folder">
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
 			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
-			<Item Name="Cheesy Drive.vi" Type="VI" URL="../Cheesy Drive.vi"/>
 			<Item Name="Disabled.vi" Type="VI" URL="../Disabled.vi"/>
 			<Item Name="Finish.vi" Type="VI" URL="../Finish.vi"/>
 			<Item Name="Periodic Tasks.vi" Type="VI" URL="../Periodic Tasks.vi"/>
@@ -146,6 +145,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
+		<Item Name="Cheesy Drive.vi" Type="VI" URL="../Cheesy Drive.vi"/>
 		<Item Name="Get Yaw.vi" Type="VI" URL="../Get Yaw.vi"/>
 		<Item Name="Goal Vision.vi" Type="VI" URL="../Goal Vision.vi"/>
 		<Item Name="navXLibraryv2.lvlibp" Type="LVLibp" URL="../navXLibraryv2.lvlibp">
