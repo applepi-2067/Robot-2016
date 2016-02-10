@@ -24,6 +24,9 @@
 					<Item Name="Sparkfun Atomic IMU.ive" Type="Document" URL="../FRC SimulatedRSC/ive/Sparkfun Atomic IMU.ive"/>
 				</Item>
 			</Item>
+			<Item Name="Support Code" Type="Folder">
+				<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
+			</Item>
 			<Item Name="FRC Simulated.xml" Type="Document" URL="../FRC Simulated.xml"/>
 		</Item>
 		<Item Name="Robot Simulation Readme.html" Type="Document" URL="../Robot Simulation Readme.html"/>
@@ -130,9 +133,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Script Error.vi" Type="VI" URL="../AppleScript/Script Error.vi"/>
 			<Item Name="Timer.vi" Type="VI" URL="../AppleScript/Timer.vi"/>
 			<Item Name="Update Script.vi" Type="VI" URL="../AppleScript/Update Script.vi"/>
-		</Item>
-		<Item Name="Support Code" Type="Folder">
-			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
 		<Item Name="Team Code" Type="Folder">
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
