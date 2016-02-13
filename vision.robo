@@ -1,10 +1,12 @@
 <head><version>2.79.15</version></head>
 <Timer>
   <between>FALSE</between>
+  <end_time>1455306302</end_time>
   <freq_num>100</freq_num>
   <once_every>TRUE</once_every>
+  <start_time>1455306302</start_time>
 </Timer>
-<Axis_Internet_Camera>
+<Axis_Internet_Camera disabled>
   <auto_back_light>FALSE</auto_back_light>
   <auto_exposure>FALSE</auto_exposure>
   <auto_white_balance>FALSE</auto_white_balance>
@@ -116,13 +118,14 @@
   <threshold>-1</threshold>
   <use_subpixel>FALSE</use_subpixel>
 </Center_of_Gravity>
-<NetworkTables>
-  <delay>100</delay>
-  <filter_type_index>0</filter_type_index>
-  <hostname>roborio-2067-frc.local</hostname>
-  <port>1735</port>
-  <prefix>/SmartDashboard/</prefix>
-  <variables_to_send>COG_X
-COG_Y</variables_to_send>
-  <variable_type_index>0</variable_type_index>
-</NetworkTables>
+<HTTP>
+  <async>FALSE</async>
+  <is_active>FALSE</is_active>
+  <max_rate_index>2</max_rate_index>
+  <method_index>1</method_index>
+  <send_on_change_only>FALSE</send_on_change_only>
+  <tab_selected>1</tab_selected>
+  <timeout>5000</timeout>
+  <url>127.0.0.1:8000</url>
+  <variables_to_save>COG_Y,COG_X</variables_to_save>
+</HTTP>
