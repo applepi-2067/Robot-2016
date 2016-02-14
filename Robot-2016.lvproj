@@ -119,6 +119,7 @@ AddOutputFilter chunkFilter
 				<Item Name="CMD_Harvest.vi" Type="VI" URL="../AppleScript/Commands/CMD_Harvest.vi"/>
 				<Item Name="CMD_Reset.vi" Type="VI" URL="../AppleScript/Commands/CMD_Reset.vi"/>
 				<Item Name="CMD_Run.vi" Type="VI" URL="../AppleScript/Commands/CMD_Run.vi"/>
+				<Item Name="CMD_Shoot.vi" Type="VI" URL="../AppleScript/Commands/CMD_Shoot.vi"/>
 				<Item Name="CMD_Wait.vi" Type="VI" URL="../AppleScript/Commands/CMD_Wait.vi"/>
 				<Item Name="Command Template.vi" Type="VI" URL="../AppleScript/Commands/Command Template.vi"/>
 			</Item>
