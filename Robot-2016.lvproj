@@ -2,7 +2,6 @@
 <Project Type="Project" LVVersion="15008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{867B0943-444C-4600-A8F7-6DC07765C7A5}" Type="Ref">/Target/Arduino Data.lvlib/I2CRegister</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -150,7 +149,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 		</Item>
-		<Item Name="Arduino Data.lvlib" Type="Library" URL="../Arduino Data.lvlib"/>
 		<Item Name="navXLibraryv2.lvlibp" Type="LVLibp" URL="../navXLibraryv2.lvlibp">
 			<Item Name="Get" Type="Folder">
 				<Item Name="Raw Values" Type="Folder">
