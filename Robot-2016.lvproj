@@ -119,7 +119,6 @@ AddOutputFilter chunkFilter
 				<Item Name="CMD_Harvest.vi" Type="VI" URL="../AppleScript/Commands/CMD_Harvest.vi"/>
 				<Item Name="CMD_Reset.vi" Type="VI" URL="../AppleScript/Commands/CMD_Reset.vi"/>
 				<Item Name="CMD_Run.vi" Type="VI" URL="../AppleScript/Commands/CMD_Run.vi"/>
-				<Item Name="CMD_Shoot.vi" Type="VI" URL="../AppleScript/Commands/CMD_Shoot.vi"/>
 				<Item Name="CMD_Wait.vi" Type="VI" URL="../AppleScript/Commands/CMD_Wait.vi"/>
 				<Item Name="Command Template.vi" Type="VI" URL="../AppleScript/Commands/Command Template.vi"/>
 			</Item>
@@ -135,10 +134,13 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="Custom VIs" Type="Folder">
 			<Item Name="Cheesy Drive.vi" Type="VI" URL="../Cheesy Drive.vi"/>
+			<Item Name="Drive PID.vi" Type="VI" URL="../Drive PID.vi"/>
+			<Item Name="Get PID.vi" Type="VI" URL="../Get PID.vi"/>
 			<Item Name="Get Yaw.vi" Type="VI" URL="../Get Yaw.vi"/>
 			<Item Name="Goal Vision.vi" Type="VI" URL="../Goal Vision.vi"/>
 			<Item Name="Reset Yaw.vi" Type="VI" URL="../Reset Yaw.vi"/>
 			<Item Name="SRX Test.vi" Type="VI" URL="../SRX Test.vi"/>
+			<Item Name="Turn PID.vi" Type="VI" URL="../Turn PID.vi"/>
 		</Item>
 		<Item Name="Team Code" Type="Folder">
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
@@ -653,6 +655,7 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_EncoderOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderOpen.vi"/>
 				<Item Name="WPI_EncoderRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderRefNum Registry Get.vi"/>
 				<Item Name="WPI_EncoderRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderRefNum Registry Set.vi"/>
+				<Item Name="WPI_EncoderReset.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderReset.vi"/>
 				<Item Name="WPI_EncoderType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderType.ctl"/>
 				<Item Name="WPI_ERRAcquireInvalidPWMChannelIdx.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/PWM/WPI_ERRAcquireInvalidPWMChannelIdx.vi"/>
 				<Item Name="WPI_ERREncoderAllocate.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_ERREncoderAllocate.vi"/>
