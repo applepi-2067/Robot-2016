@@ -116,9 +116,10 @@ AddOutputFilter chunkFilter
 		<Item Name="AppleScript" Type="Folder">
 			<Item Name="Commands" Type="Folder">
 				<Item Name="CMD_Drive.vi" Type="VI" URL="../AppleScript/Commands/CMD_Drive.vi"/>
-				<Item Name="CMD_Harvest.vi" Type="VI" URL="../AppleScript/Commands/CMD_Harvest.vi"/>
+				<Item Name="CMD_Harvester.vi" Type="VI" URL="../AppleScript/Commands/CMD_Harvester.vi"/>
 				<Item Name="CMD_Reset.vi" Type="VI" URL="../AppleScript/Commands/CMD_Reset.vi"/>
 				<Item Name="CMD_Run.vi" Type="VI" URL="../AppleScript/Commands/CMD_Run.vi"/>
+				<Item Name="CMD_Shooter.vi" Type="VI" URL="../AppleScript/Commands/CMD_Shooter.vi"/>
 				<Item Name="CMD_Wait.vi" Type="VI" URL="../AppleScript/Commands/CMD_Wait.vi"/>
 				<Item Name="Command Template.vi" Type="VI" URL="../AppleScript/Commands/Command Template.vi"/>
 			</Item>
@@ -534,9 +535,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Remove Quotes2.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Remove Quotes2.vi"/>
 				<Item Name="Report Read Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Report Read Error.vi"/>
 				<Item Name="roboRIO_FPGA_2016_16.1.0.lvbitx" Type="Document" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/roboRIO_FPGA_2016_16.1.0.lvbitx"/>
-				<Item Name="SD Read Name Cache.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/SD Read Name Cache.vi"/>
-				<Item Name="SD Read Number.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/SD Read Number.vi"/>
-				<Item Name="SD Read String.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/SD Read String.vi"/>
 				<Item Name="SD Write Boolean Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/SD Write Boolean Array.vi"/>
 				<Item Name="SD Write Boolean.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/SD Write Boolean.vi"/>
 				<Item Name="SD Write Name Cache.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/SD Write Name Cache.vi"/>
