@@ -1,3 +1,12 @@
-automode 0
-harvester up
+automode 0 //low bar
+harvester down
+wait for 1.5
+drive at 0.5,0; for 3
+end
+
+automode 1 //rock wall/moat
+wait for 0.3
+shooter to 1
+wait for 2.5
+drive at 0.64,0; for 3.8
 end
