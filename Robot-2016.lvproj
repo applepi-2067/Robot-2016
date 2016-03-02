@@ -137,10 +137,12 @@ AddOutputFilter chunkFilter
 			<Item Name="Cheesy Drive.vi" Type="VI" URL="../Cheesy Drive.vi"/>
 			<Item Name="Drive PID.vi" Type="VI" URL="../Drive PID.vi"/>
 			<Item Name="Get PID.vi" Type="VI" URL="../Get PID.vi"/>
+			<Item Name="Get Yaw.vi" Type="VI" URL="../Get Yaw.vi"/>
 			<Item Name="Goal Align.vi" Type="VI" URL="../Goal Align.vi"/>
 			<Item Name="Goal Vision.vi" Type="VI" URL="../Goal Vision.vi"/>
 			<Item Name="Harvest Arm.vi" Type="VI" URL="../Harvest Arm.vi"/>
 			<Item Name="Harvester Intake.vi" Type="VI" URL="../Harvester Intake.vi"/>
+			<Item Name="Reset Yaw.vi" Type="VI" URL="../Reset Yaw.vi"/>
 			<Item Name="Set SRX PID.vi" Type="VI" URL="../Set SRX PID.vi"/>
 			<Item Name="Shooter Control.vi" Type="VI" URL="../Shooter Control.vi"/>
 			<Item Name="Turn PID.vi" Type="VI" URL="../Turn PID.vi"/>
@@ -608,219 +610,12 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Get Yaw.vi" Type="VI" URL="../Get Yaw.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="navX Library v2.lvlib" Type="Library" URL="../navX/navX Library v2/navX Library v2.lvlib"/>
-			<Item Name="navXLibraryv2.lvlibp" Type="LVLibp" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp">
-				<Item Name="Get" Type="Folder">
-					<Item Name="Raw Values" Type="Folder">
-						<Item Name="Z900_navX_Get_RawValues_GyroAccelMag.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Get/Raw Values/Z900_navX_Get_RawValues_GyroAccelMag.vi"/>
-					</Item>
-					<Item Name="System Information" Type="Folder">
-						<Item Name="Z900_navX_Get_SystemInformation_BoardInformation.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_BoardInformation.vi"/>
-						<Item Name="Z900_navX_Get_SystemInformation_MPUTemp.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_MPUTemp.vi"/>
-						<Item Name="Z900_navX_Get_SystemInformation_Offsets.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_Offsets.vi"/>
-						<Item Name="Z900_navX_Get_SystemInformation_Status.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_Status.vi"/>
-						<Item Name="Z900_navX_Get_SystemInformation_Timestamp.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Get/System Information/Z900_navX_Get_SystemInformation_Timestamp.vi"/>
-					</Item>
-					<Item Name="Z900_navX_Get_Displacement.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Get/Z900_navX_Get_Displacement.vi"/>
-					<Item Name="Z900_navX_Get_LinearAcceleration.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Get/Z900_navX_Get_LinearAcceleration.vi"/>
-					<Item Name="Z900_navX_Get_Quaternion.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Get/Z900_navX_Get_Quaternion.vi"/>
-					<Item Name="Z900_navX_Get_YPRHfH.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Get/Z900_navX_Get_YPRHfH.vi"/>
-				</Item>
-				<Item Name="IO" Type="Folder">
-					<Item Name="Internal" Type="Folder">
-						<Item Name="SERIAL" Type="Folder">
-							<Item Name="Z900_navX_SERIAL_CapturePacket.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/SERIAL/Z900_navX_SERIAL_CapturePacket.vi"/>
-							<Item Name="Z900_navX_SERIAL_DecodePacket.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/SERIAL/Z900_navX_SERIAL_DecodePacket.vi"/>
-							<Item Name="Z900_navX_SERIAL_PacketChecksum.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/SERIAL/Z900_navX_SERIAL_PacketChecksum.vi"/>
-							<Item Name="Z900_navX_SERIAL_ValidatePacketChecksum.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/SERIAL/Z900_navX_SERIAL_ValidatePacketChecksum.vi"/>
-							<Item Name="Z900_navX_SERIAL_ValidatePacketTermination.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/SERIAL/Z900_navX_SERIAL_ValidatePacketTermination.vi"/>
-						</Item>
-						<Item Name="SPI" Type="Folder">
-							<Item Name="Z900_navX_SPI_CRC.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/SPI/Z900_navX_SPI_CRC.vi"/>
-						</Item>
-						<Item Name="Z900_navX_Internal_Close.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/Z900_navX_Internal_Close.vi"/>
-						<Item Name="Z900_navX_Internal_Error.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/Z900_navX_Internal_Error.vi"/>
-						<Item Name="Z900_navX_Internal_Get.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/Z900_navX_Internal_Get.vi"/>
-						<Item Name="Z900_navX_Internal_Open.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/Z900_navX_Internal_Open.vi"/>
-						<Item Name="Z900_navX_Internal_ProcessingLoop.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/Z900_navX_Internal_ProcessingLoop.vi"/>
-						<Item Name="Z900_navX_Internal_SendIntegrationControl.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/Z900_navX_Internal_SendIntegrationControl.vi"/>
-						<Item Name="Z900_navX_Internal_StartLoop.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/Z900_navX_Internal_StartLoop.vi"/>
-						<Item Name="Z900_navX_Internal_UpdateDevice.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/Z900_navX_Internal_UpdateDevice.vi"/>
-						<Item Name="Z900_navX_Internal_ZeroDisplacement.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/Z900_navX_Internal_ZeroDisplacement.vi"/>
-						<Item Name="Z900_navX_Internal_ZeroVelocity.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/Z900_navX_Internal_ZeroVelocity.vi"/>
-						<Item Name="Z900_navX_Internal_ZeroYaw.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Internal/Z900_navX_Internal_ZeroYaw.vi"/>
-					</Item>
-					<Item Name="Open" Type="Folder">
-						<Item Name="Z900_navX_Open_I2C.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Open/Z900_navX_Open_I2C.vi"/>
-						<Item Name="Z900_navX_Open_Serial.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Open/Z900_navX_Open_Serial.vi"/>
-						<Item Name="Z900_navX_Open_SPI.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Open/Z900_navX_Open_SPI.vi"/>
-					</Item>
-					<Item Name="Z900_navX_Close.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Z900_navX_Close.vi"/>
-					<Item Name="Z900_navX_Open.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/IO/Z900_navX_Open.vi"/>
-				</Item>
-				<Item Name="RefNum" Type="Folder">
-					<Item Name="Z900_navX_RefNum_Get.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/RefNum/Z900_navX_RefNum_Get.vi"/>
-					<Item Name="Z900_navX_RefNum_GetSet.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/RefNum/Z900_navX_RefNum_GetSet.vi"/>
-					<Item Name="Z900_navX_RefNum_Set.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/RefNum/Z900_navX_RefNum_Set.vi"/>
-				</Item>
-				<Item Name="Set" Type="Folder">
-					<Item Name="Z900_navX_Set_SerialProtocol.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Set/Z900_navX_Set_SerialProtocol.vi"/>
-					<Item Name="Z900_navX_Set_ZeroDisplacement.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Set/Z900_navX_Set_ZeroDisplacement.vi"/>
-					<Item Name="Z900_navX_Set_ZeroVelocity.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Set/Z900_navX_Set_ZeroVelocity.vi"/>
-					<Item Name="Z900_navX_Set_ZeroYaw.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Set/Z900_navX_Set_ZeroYaw.vi"/>
-				</Item>
-				<Item Name="TypeDefs" Type="Folder">
-					<Item Name="Z900_navX_Flags" Type="Folder">
-						<Item Name="Z900_navX_Flags_CalibrationStatusTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Flags/Z900_navX_Flags_CalibrationStatusTypeDef.ctl"/>
-						<Item Name="Z900_navX_Flags_CapabilityTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Flags/Z900_navX_Flags_CapabilityTypeDef.ctl"/>
-						<Item Name="Z900_navX_Flags_HardwareRevTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Flags/Z900_navX_Flags_HardwareRevTypeDef.ctl"/>
-						<Item Name="Z900_navX_Flags_OmnimountConfigTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Flags/Z900_navX_Flags_OmnimountConfigTypeDef.ctl"/>
-						<Item Name="Z900_navX_Flags_OpStatusTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Flags/Z900_navX_Flags_OpStatusTypeDef.ctl"/>
-						<Item Name="Z900_navX_Flags_SelfTestStatusTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Flags/Z900_navX_Flags_SelfTestStatusTypeDef.ctl"/>
-						<Item Name="Z900_navX_Flags_SensorStatusTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Flags/Z900_navX_Flags_SensorStatusTypeDef.ctl"/>
-					</Item>
-					<Item Name="Z900_navX_OpenTypeDefs" Type="Folder">
-						<Item Name="Z900_navX_OpenTypeDef_I2C.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/navX Open TypeDefs/Z900_navX_OpenTypeDef_I2C.ctl"/>
-						<Item Name="Z900_navX_OpenTypeDef_Serial.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/navX Open TypeDefs/Z900_navX_OpenTypeDef_Serial.ctl"/>
-						<Item Name="Z900_navX_OpenTypeDef_SPI.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/navX Open TypeDefs/Z900_navX_OpenTypeDef_SPI.ctl"/>
-					</Item>
-					<Item Name="Z900_navX_ActionTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Z900_navX_ActionTypeDef.ctl"/>
-					<Item Name="Z900_navX_DeviceExtendedRegisters.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Z900_navX_DeviceExtendedRegisters.ctl"/>
-					<Item Name="Z900_navX_DeviceRegisters.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Z900_navX_DeviceRegisters.ctl"/>
-					<Item Name="Z900_navX_DeviceTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Z900_navX_DeviceTypeDef.ctl"/>
-					<Item Name="Z900_navX_IntegrationControlRegisters.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Z900_navX_IntegrationControlRegisters.ctl"/>
-					<Item Name="Z900_navX_InterfaceTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Z900_navX_InterfaceTypeDef.ctl"/>
-					<Item Name="Z900_navX_NotifyPacketTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Z900_navX_NotifyPacketTypeDef.ctl"/>
-					<Item Name="Z900_navX_ProtocolTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Z900_navX_ProtocolTypeDef.ctl"/>
-					<Item Name="Z900_navX_SerialStreamTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Z900_navX_SerialStreamTypeDef.ctl"/>
-					<Item Name="Z900_navX_ZeroVectorTypeDef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/TypeDefs/Z900_navX_ZeroVectorTypeDef.ctl"/>
-				</Item>
-				<Item Name="Util" Type="Folder">
-					<Item Name="Decode Protocol" Type="Folder">
-						<Item Name="Z900_navX_Util_DecodeProtocol_1616.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Decode Protocol/Z900_navX_Util_DecodeProtocol_1616.vi"/>
-						<Item Name="Z900_navX_Util_DecodeProtocol_Int8.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Decode Protocol/Z900_navX_Util_DecodeProtocol_Int8.vi"/>
-						<Item Name="Z900_navX_Util_DecodeProtocol_Int16.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Decode Protocol/Z900_navX_Util_DecodeProtocol_Int16.vi"/>
-						<Item Name="Z900_navX_Util_DecodeProtocol_Int32.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Decode Protocol/Z900_navX_Util_DecodeProtocol_Int32.vi"/>
-						<Item Name="Z900_navX_Util_DecodeProtocol_SignedHundredths.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Decode Protocol/Z900_navX_Util_DecodeProtocol_SignedHundredths.vi"/>
-						<Item Name="Z900_navX_Util_DecodeProtocol_SignedRatio.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Decode Protocol/Z900_navX_Util_DecodeProtocol_SignedRatio.vi"/>
-						<Item Name="Z900_navX_Util_DecodeProtocol_SignedThousandths.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Decode Protocol/Z900_navX_Util_DecodeProtocol_SignedThousandths.vi"/>
-						<Item Name="Z900_navX_Util_DecodeProtocol_UInt16.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Decode Protocol/Z900_navX_Util_DecodeProtocol_UInt16.vi"/>
-						<Item Name="Z900_navX_Util_DecodeProtocol_UInt32.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Decode Protocol/Z900_navX_Util_DecodeProtocol_UInt32.vi"/>
-						<Item Name="Z900_navX_Util_DecodeProtocol_UnsignedHundredths.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Decode Protocol/Z900_navX_Util_DecodeProtocol_UnsignedHundredths.vi"/>
-						<Item Name="Z900_navX_Util_DecodeProtocol_UnsignedThousandths.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Decode Protocol/Z900_navX_Util_DecodeProtocol_UnsignedThousandths.vi"/>
-					</Item>
-					<Item Name="Encode Protocol" Type="Folder">
-						<Item Name="Z900_navX_Util_EncodeProtocol_Int8.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Encode Protocol/Z900_navX_Util_EncodeProtocol_Int8.vi"/>
-						<Item Name="Z900_navX_Util_EncodeProtocol_Int16.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Encode Protocol/Z900_navX_Util_EncodeProtocol_Int16.vi"/>
-						<Item Name="Z900_navX_Util_EncodeProtocol_Int32.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Encode Protocol/Z900_navX_Util_EncodeProtocol_Int32.vi"/>
-						<Item Name="Z900_navX_Util_EncodeProtocol_SignedHundredths.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Encode Protocol/Z900_navX_Util_EncodeProtocol_SignedHundredths.vi"/>
-						<Item Name="Z900_navX_Util_EncodeProtocol_SignedRatio.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Encode Protocol/Z900_navX_Util_EncodeProtocol_SignedRatio.vi"/>
-						<Item Name="Z900_navX_Util_EncodeProtocol_SignedThousandths.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Encode Protocol/Z900_navX_Util_EncodeProtocol_SignedThousandths.vi"/>
-						<Item Name="Z900_navX_Util_EncodeProtocol_UInt16.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Encode Protocol/Z900_navX_Util_EncodeProtocol_UInt16.vi"/>
-						<Item Name="Z900_navX_Util_EncodeProtocol_UInt32.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Encode Protocol/Z900_navX_Util_EncodeProtocol_UInt32.vi"/>
-						<Item Name="Z900_navX_Util_EncodeProtocol_UnsignedHundredths.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Encode Protocol/Z900_navX_Util_EncodeProtocol_UnsignedHundredths.vi"/>
-						<Item Name="Z900_navX_Util_EncodeProtocol_UnsignedThousandths.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Encode Protocol/Z900_navX_Util_EncodeProtocol_UnsignedThousandths.vi"/>
-					</Item>
-					<Item Name="Z900_navX_Util_BigEndian_to_LittleEndian.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Z900_navX_Util_BigEndian_to_LittleEndian.vi"/>
-					<Item Name="Z900_navX_Util_LittleEndian_to_BigEndian.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/navX Library v2/Util/Z900_navX_Util_LittleEndian_to_BigEndian.vi"/>
-				</Item>
-				<Item Name="Acquire Semaphore.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/semaphor.llb/Acquire Semaphore.vi"/>
-				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>
-				<Item Name="Clear Errors.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="FPGA_DIODevRef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/DIO/FPGA_DIODevRef.ctl"/>
-				<Item Name="FPGA_DIOOpen.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/Targets/NI/RT/vi.lib/Rock Robotics/SystemInterfaces/DIO/FPGA_DIOOpen.vi"/>
-				<Item Name="FPGA_DIOReadMXPSpecialFunction.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/DIO/FPGA_DIOReadMXPSpecialFunction.vi"/>
-				<Item Name="FPGA_DIOWriteMXPSpecialFunction.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/DIO/FPGA_DIOWriteMXPSpecialFunction.vi"/>
-				<Item Name="FPGA_NIFPGAInterfaceFPGAResourceConstant.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/FPGA_NIFPGAInterfaceFPGAResourceConstant.vi"/>
-				<Item Name="FPGA_SPIWriteChipSelectActiveHigh.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/SPI/FPGA_SPIWriteChipSelectActiveHigh.vi"/>
-				<Item Name="FPGA_SystemAsync VI Agent.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/System/FPGA_SystemAsync VI Agent.vi"/>
-				<Item Name="FPGA_SystemAsynch VI Registration.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/System/FPGA_SystemAsynch VI Registration.vi"/>
-				<Item Name="FPGA_SystemERRWrongVersion.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/System/FPGA_SystemERRWrongVersion.vi"/>
-				<Item Name="FPGA_SystemFPGA Ref Global.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/System/FPGA_SystemFPGA Ref Global.vi"/>
-				<Item Name="FPGA_SystemFRC FPGA Ref.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/System/FPGA_SystemFRC FPGA Ref.ctl"/>
-				<Item Name="FPGA_SystemGet.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/System/FPGA_SystemGet.vi"/>
-				<Item Name="FPGA_SystemOpen.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/System/FPGA_SystemOpen.vi"/>
-				<Item Name="FPGA_SystemStart Async Agent.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/Targets/NI/RT/vi.lib/Rock Robotics/SystemInterfaces/System/FPGA_SystemStart Async Agent.vi"/>
-				<Item Name="FPGA_UtilitiesRead LocalTime.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/Utilities/FPGA_UtilitiesRead LocalTime.vi"/>
-				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
-				<Item Name="GetSystemError.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/System/GetSystemError.vi"/>
-				<Item Name="i2c_bus.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/i2clib/i2c_bus.ctl"/>
-				<Item Name="i2clib_close.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/i2clib/i2clib_close.vi"/>
-				<Item Name="i2clib_open.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/i2clib/i2clib_open.vi"/>
-				<Item Name="i2clib_read.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/i2clib/i2clib_read.vi"/>
-				<Item Name="i2clib_write.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/i2clib/i2clib_write.vi"/>
-				<Item Name="i2clib_writeread.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/i2clib/i2clib_writeread.vi"/>
-				<Item Name="NetComm_UnloadCPPStartupProgram.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UnloadCPPStartupProgram.vi"/>
-				<Item Name="NetComm_UsageReport_report.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_report.vi"/>
-				<Item Name="NetComm_UsageReport_ResourceType.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_ResourceType.ctl"/>
-				<Item Name="NI WPI Serial USB.lvlib" Type="Library" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/NI WPI/NI WPI Serial USB.lvlib"/>
-				<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
-				<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
-				<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
-				<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
-				<Item Name="Not A Semaphore.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/semaphor.llb/Not A Semaphore.vi"/>
-				<Item Name="Obtain Semaphore Reference.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/semaphor.llb/Obtain Semaphore Reference.vi"/>
-				<Item Name="Release Semaphore.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/semaphor.llb/Release Semaphore.vi"/>
-				<Item Name="Semaphore RefNum" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/semaphor.llb/Semaphore RefNum"/>
-				<Item Name="Semaphore Refnum Core.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/semaphor.llb/Semaphore Refnum Core.ctl"/>
-				<Item Name="spi_bus.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/spilib/spi_bus.ctl"/>
-				<Item Name="spilib_close.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/spilib/spilib_close.vi"/>
-				<Item Name="spilib_open.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/spilib/spilib_open.vi"/>
-				<Item Name="spilib_read.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/spilib/spilib_read.vi"/>
-				<Item Name="spilib_setopts.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/spilib/spilib_setopts.vi"/>
-				<Item Name="spilib_setspeed.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/spilib/spilib_setspeed.vi"/>
-				<Item Name="spilib_writeread.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/SystemInterfaces/spilib/spilib_writeread.vi"/>
-				<Item Name="System Exec.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Platform/system.llb/System Exec.vi"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
-				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="WPI_I2C_ERRI2CAlreadyAllocated.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/I2C/WPI_I2C_ERRI2CAlreadyAllocated.vi"/>
-				<Item Name="WPI_I2C_ERRInvalidI2C_Index.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/I2C/WPI_I2C_ERRInvalidI2C_Index.vi"/>
-				<Item Name="WPI_I2CBusCache.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/I2C/WPI_I2CBusCache.vi"/>
-				<Item Name="WPI_I2CClose.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/I2C/WPI_I2CClose.vi"/>
-				<Item Name="WPI_I2CDevRef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/I2C/WPI_I2CDevRef.ctl"/>
-				<Item Name="WPI_I2COpen.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/I2C/WPI_I2COpen.vi"/>
-				<Item Name="WPI_I2CRead.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/I2C/WPI_I2CRead.vi"/>
-				<Item Name="WPI_I2CWrite.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/I2C/WPI_I2CWrite.vi"/>
-				<Item Name="WPI_MotorControlTrackCANSemaphores.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/MotorControl/WPI_MotorControlTrackCANSemaphores.vi"/>
-				<Item Name="WPI_MXP I2C Bus to first MXP Pin.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/MXP/WPI_MXP I2C Bus to first MXP Pin.vi"/>
-				<Item Name="WPI_MXP Shared MXP Pin.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/MXP/WPI_MXP Shared MXP Pin.ctl"/>
-				<Item Name="WPI_MXP SPI Bus to first MXP Pin.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/MXP/WPI_MXP SPI Bus to first MXP Pin.vi"/>
-				<Item Name="WPI_MXP_ChannelCache.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/MXP/WPI_MXP_ChannelCache.vi"/>
-				<Item Name="WPI_MXP_Grab Mutex.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/MXP/WPI_MXP_Grab Mutex.vi"/>
-				<Item Name="WPI_PWMChannelCacheOp.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/PWM/WPI_PWMChannelCacheOp.ctl"/>
-				<Item Name="WPI_SerialPortClose.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SerialPort/WPI_SerialPortClose.vi"/>
-				<Item Name="WPI_SerialPortFlush.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SerialPort/WPI_SerialPortFlush.vi"/>
-				<Item Name="WPI_SerialPortGetBytesReceived.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SerialPort/WPI_SerialPortGetBytesReceived.vi"/>
-				<Item Name="WPI_SerialPortRead.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SerialPort/WPI_SerialPortRead.vi"/>
-				<Item Name="WPI_SerialPortRef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SerialPort/WPI_SerialPortRef.ctl"/>
-				<Item Name="WPI_SerialPortReset.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SerialPort/WPI_SerialPortReset.vi"/>
-				<Item Name="WPI_SerialPortTermination.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SerialPort/WPI_SerialPortTermination.vi"/>
-				<Item Name="WPI_SerialPortWrite.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SerialPort/WPI_SerialPortWrite.vi"/>
-				<Item Name="WPI_SPI_ERRInvalidSPI_Index.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SPI/WPI_SPI_ERRInvalidSPI_Index.vi"/>
-				<Item Name="WPI_SPI_ERRSPIAlreadyAllocated.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SPI/WPI_SPI_ERRSPIAlreadyAllocated.vi"/>
-				<Item Name="WPI_SPIBusCache.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SPI/WPI_SPIBusCache.vi"/>
-				<Item Name="WPI_SPIBusCacheOp.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SPI/WPI_SPIBusCacheOp.ctl"/>
-				<Item Name="WPI_SPIClose.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SPI/WPI_SPIClose.vi"/>
-				<Item Name="WPI_SPIDevRef.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SPI/WPI_SPIDevRef.ctl"/>
-				<Item Name="WPI_SPIMode.ctl" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SPI/WPI_SPIMode.ctl"/>
-				<Item Name="WPI_SPIOpen.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SPI/WPI_SPIOpen.vi"/>
-				<Item Name="WPI_SPIRead.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SPI/WPI_SPIRead.vi"/>
-				<Item Name="WPI_SPIWrite.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/SPI/WPI_SPIWrite.vi"/>
-				<Item Name="WPI_UtilitiesERRGetRefNum.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/Utilities/WPI_UtilitiesERRGetRefNum.vi"/>
-				<Item Name="WPI_UtilitiesFRC Build Error.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC Build Error.vi"/>
-				<Item Name="WPI_UtilitiesFRC FPGATime.vi" Type="VI" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC FPGATime.vi"/>
-				<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="../Builds/home/lvuser/natinst/bin/data/navXLibraryv2.lvlibp/1abvi3w/vi.lib/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
-			</Item>
 			<Item Name="NI WPI Serial USB.lvlib" Type="Library" URL="../navX/NI WPI/NI WPI Serial USB.lvlib"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Reset Yaw.vi" Type="VI" URL="../Reset Yaw.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
