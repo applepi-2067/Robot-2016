@@ -145,6 +145,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Reset Yaw.vi" Type="VI" URL="../Reset Yaw.vi"/>
 			<Item Name="Set SRX PID.vi" Type="VI" URL="../Set SRX PID.vi"/>
 			<Item Name="Shooter Control.vi" Type="VI" URL="../Shooter Control.vi"/>
+			<Item Name="Timed Task.vi" Type="VI" URL="../Timed Task.vi"/>
 			<Item Name="Turn PID.vi" Type="VI" URL="../Turn PID.vi"/>
 		</Item>
 		<Item Name="Team Code" Type="Folder">

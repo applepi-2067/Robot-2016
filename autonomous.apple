@@ -1,7 +1,6 @@
 automode 0 //Shoot Subroutine
 wait for 1 //make sure everything is settled
 drive align angle
-drive align distance //run this line twice if insufficient accuracy
 shooter align
 shooter fire
 shooter to 1
@@ -9,72 +8,70 @@ end
 
 automode 1  //Slot 1 Subroutine
 shooter to 2
-drive turn 60 //shoot in side goal
+drive to 92,0.5,11
+drive turn 70 
 end
 
 automode 2 //Slot 2 Subroutine
-drive turn 90
-drive to 87,0.4
 shooter to 2
-drive turn -90
+drive to 98,0.5,-5.5
+drive turn 70 
 end
 
 automode 3 //Slot 3 Subroutine
-drive turn 90
-drive to 37,0.4
 shooter to 2
-drive turn -90
+drive to 30,0.5,13 //may or may not need turn after this
 end
 
 automode 4 //Slot 4 Subroutine
 shooter to 2
-drive turn -4
-wait until level reached
+drive to 25,0.5,-8 //drive turn -6
 end
 
 automode 5 //Slot 5 Subroutine
-drive turn -90
-drive to 63,0.4
 shooter to 2
-drive turn 90
+drive to 60,0.5 //random number
+drive turn -33 //random number
 end
 
 automode 6 //Low Bar Subroutine
-harvester low on
 harvester down
 wait for 0.8
-drive to 175,0.45 //no idea what this should be
-harvester low off
+drive at 0.5; until distance=144
 harvester up
-wait for 0.8
+drive at 0.5; until distance=160 //no idea what this should be
 end
 
 automode 7 //Portcullis Subroutine
 harvester low on
 harvester down
 wait for 0.8
-drive at 0.45,0; for 1
+drive at 0.42; until distance=48
 harvester up
-drive to 100,0.5
+drive to 144,0.45
 harvester low off
+drive turn 180
+reset gyro
+reset encoders
 end
 
 automode 8 //Cheval Subroutine
+drive to 38,0.42
 harvester low on
-drive to 6,0.4 //is this needed?
 harvester down
 wait for 1
-drive at 0.65,0; for 1
+drive at 0.65,0; for 0.75
 harvester up
 harvester low off
-drive to 100,0.45
+drive at 0.45; until distance=200 //random number
 end
 
 automode 9 //Terrain Subroutine
 shooter to 1
 wait until level reached
-wait for 0.5
-drive to 110,0.64
+wait for 0.85
+drive at 0.71; until distance=210 //drive to 220,0.67
+reset encoders //tune the above distance so that there is 2 ft from end of robot to ramp
 end
 
 automode 16 //Spy Box subroutine
@@ -92,7 +89,7 @@ shooter fire
 end
 
 automode 21 //move or something
-drive to 120,0.4
+drive to 100,0.4
 end
 
 automode 90 //low bar
