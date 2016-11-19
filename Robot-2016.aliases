@@ -1,5 +1,9 @@
 [My Computer]
+<<<<<<< HEAD
 My Computer = "10.0.0.69"
+=======
+My Computer = "10.0.0.190"
+>>>>>>> 8e5ee30fdb98a598b6d0cfcc51d72af8f753c1a2
 
 [Target]
 Target = "roboRIO-2067-FRC.local"
