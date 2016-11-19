@@ -1,54 +1,56 @@
 automode 0 //Shoot Subroutine
 wait for 1 //make sure everything is settled
-drive align angle
+drive align
+wait for 0.8
 shooter align
 shooter fire
 shooter to 1
 end
 
 automode 1  //Slot 1 Subroutine
-shooter to 2
-drive to 92,0.5,11
-drive turn 70 
+drive at 0.45,0; until distance=100
+harvester up
+reset encoders
+drive at 0.45,24; until distance=72
+shooter to 1
+drive turn 45
 end
 
 automode 2 //Slot 2 Subroutine
-shooter to 2
-drive to 98,0.5,-5.5
-drive turn 70 
+drive at 0.6,0; until distance=58
+shooter to 2 //drive to 98,0.5,-5.5
+drive turn 45 
 end
 
 automode 3 //Slot 3 Subroutine
 shooter to 2
-drive to 30,0.5,13 //may or may not need turn after this
+drive turn 15 //drive to 30,0.5,13 may or may not need turn after this
 end
 
 automode 4 //Slot 4 Subroutine
 shooter to 2
-drive to 25,0.5,-8 //drive turn -6
+drive turn -7 //drive to 25,0.5,-8 drive turn -6
 end
 
 automode 5 //Slot 5 Subroutine
-shooter to 2
-drive to 60,0.5 //random number
-drive turn -33 //random number
+shooter to 1 //drive to 60,0.5 random number
+drive turn -45 //random number
 end
 
 automode 6 //Low Bar Subroutine
 harvester down
 wait for 0.8
-drive at 0.5; until distance=144
-harvester up
-drive at 0.5; until distance=160 //no idea what this should be
 end
+
+//drive at 0.5,0; until distance=160
+//harvester up
+//drive at 0.5,0; until distance=180 //no idea what this should be
 
 automode 7 //Portcullis Subroutine
 harvester low on
 harvester down
 wait for 0.8
-drive at 0.42; until distance=48
-harvester up
-drive to 144,0.45
+drive to 180,0.5
 harvester low off
 drive turn 180
 reset gyro
@@ -63,14 +65,16 @@ wait for 1
 drive at 0.65,0; for 0.75
 harvester up
 harvester low off
-drive at 0.45; until distance=200 //random number
+drive at 0.45,0; until distance=200 //random number
 end
 
 automode 9 //Terrain Subroutine
+shooter to 0
+wait for 0.25
 shooter to 1
 wait until level reached
 wait for 0.85
-drive at 0.71; until distance=210 //drive to 220,0.67
+drive at 0.72,0; until distance=165 //drive to 220,0.67
 reset encoders //tune the above distance so that there is 2 ft from end of robot to ramp
 end
 
