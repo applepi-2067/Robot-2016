@@ -1,0 +1,109 @@
+automode 0 //Shoot Subroutine
+wait for 1 //make sure everything is settled
+drive align angle
+drive align distance //run this line twice if insufficient accuracy
+shooter align
+shooter fire
+shooter to 1
+end
+
+automode 1  //Slot 1 Subroutine
+shooter to 2
+drive turn 60 //shoot in side goal
+end
+
+automode 2 //Slot 2 Subroutine
+drive turn 90
+drive to 87,0.4
+shooter to 2
+drive turn -90
+end
+
+automode 3 //Slot 3 Subroutine
+drive turn 90
+drive to 37,0.4
+shooter to 2
+drive turn -90
+end
+
+automode 4 //Slot 4 Subroutine
+shooter to 2
+drive turn -4
+wait until level reached
+end
+
+automode 5 //Slot 5 Subroutine
+drive turn -90
+drive to 63,0.4
+shooter to 2
+drive turn 90
+end
+
+automode 6 //Low Bar Subroutine
+harvester low on
+harvester down
+wait for 0.8
+drive to 175,0.45 //no idea what this should be
+harvester low off
+harvester up
+wait for 0.8
+end
+
+automode 7 //Portcullis Subroutine
+harvester low on
+harvester down
+wait for 0.8
+drive at 0.45,0; for 1
+harvester up
+drive to 100,0.5
+harvester low off
+end
+
+automode 8 //Cheval Subroutine
+harvester low on
+drive to 6,0.4 //is this needed?
+harvester down
+wait for 1
+drive at 0.65,0; for 1
+harvester up
+harvester low off
+drive to 100,0.45
+end
+
+automode 9 //Terrain Subroutine
+shooter to 1
+wait until level reached
+wait for 0.5
+drive to 110,0.64
+end
+
+automode 16 //Spy Box subroutine
+end
+
+automode 64 //Do Nothing
+end
+
+automode 20 //vision shoot 
+shooter to 2
+wait for 2
+drive align angle
+shooter align
+shooter fire
+end
+
+automode 21 //move or something
+drive to 120,0.4
+end
+
+automode 90 //low bar
+harvester down
+wait for 1.5
+drive at 0.5,0; for 3
+end
+
+automode 91 //rock wall/moat
+wait for 0.3
+shooter to 1
+wait for 2.5
+drive at 0.64,0; for 3.8
+end
